@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+    <meta name="description" content="Canvas Demo">
+    <meta name="author" content="Sascha Stojanov" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <canvas id="app"></canvas>
+    </div>
+
+    <script src="./app.js"></script>
+    <script>
+        window.onload = () => {
+            const settings = {
+                debug: {
+                    enable: true,
+                    fps: {
+                        show: true,
+                    },
+                },
+            };
+            run('app', settings);
+        }
+    </script>
+
+</body>
+
+</html>
